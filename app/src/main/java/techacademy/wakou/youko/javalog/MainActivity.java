@@ -1,9 +1,9 @@
 package techacademy.wakou.youko.javalog;
 import android.util.Log;
 
-class Dog extends Animal {
-    // クラス変数
-    static String to_jp = "犬";
+//class Dog extends Animal {
+//
+//    static String to_jp = "犬";
 
     // コンストラクタ
     public Dog(String name, int age) {
@@ -20,7 +20,7 @@ class Dog extends Animal {
     public void say() {
         Log.d("javatest", this.name + "(" + this.age + "歳)" + "「ワンワン」");
     }
-}
+//}
 public class MainActivity extends AppCompatActivity {
 
     @Override
