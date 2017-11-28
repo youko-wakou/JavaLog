@@ -4,11 +4,13 @@ import android.util.Log;
 
 /**
  * Created by appu2 on 2017/11/28.
+ * This Line
  */
 class Human extends Animal implements Thinkable {
     static String to_jp = "ヒューマン";
+     String hobby;
 
-        public Human(String name,String hobby,int age){
+         public Human(String name,String hobby,int age){
             this.name = name;
             this.age = age;
             this.hobby = hobby;
@@ -18,14 +20,13 @@ class Human extends Animal implements Thinkable {
         public static void introduce() {
             Log.d("javatest", "これはヒューマンクラスです");
         }
-
+        @Override
         public void say() {
             Log.d("javatest", "私は" + this.name + "です。年齢は" + this.age + "歳です");
         }
 
-        @Override
+
         public void think() {
-            String hobby;
             Log.d("javatest","私は"+this.hobby+"について考える");
         }
 

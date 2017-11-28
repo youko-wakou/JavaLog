@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
 
         Human human = new Human("若生陽子","しりとり",22);
         human.think();
+        human.say();
+        Human.introduce();
     }
 
 }
