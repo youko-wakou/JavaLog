@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         human.think();
         human.say();
         Human.introduce();
+        Human.human_jp();
     }
 
 }

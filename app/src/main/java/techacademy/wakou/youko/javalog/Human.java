@@ -7,17 +7,19 @@ import android.util.Log;
  * This Line
  */
 class Human extends Animal implements Thinkable {
-    static String to_jp = "ヒューマン";
-     String hobby;
+//    private static String to_jp = "ヒューマン";
+     private String hobby;
 
          public Human(String name,String hobby,int age){
             this.name = name;
             this.age = age;
             this.hobby = hobby;
         }
+        static void human_jp() {
+            Log.d("javatest","これは"+"ヒューマン"+"のクラス変数です");
+        }
 
-
-        public static void introduce() {
+    static void introduce() {
             Log.d("javatest", "これはヒューマンクラスです");
         }
         @Override
